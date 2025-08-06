@@ -1,27 +1,111 @@
-# Flask React Template
+# 🧠 Flask + React Comments App
 
-Boilerplate project for Flask, React & MongoDB based projects. This README documents the steps necessary to get the application up and running, and various components of the application.
+A full-stack web application that allows users to **add, view, update, and delete comments** using a **React frontend** and **Flask backend**.
 
-| Build Status                                                                                                                                                                                                                                     | Code Coverage                                                                                                                                                                                                                                                                                                   |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [![Production Deploy](https://github.com/jalantechnologies/rflask-boilerplate/actions/workflows/production_on_push.yml/badge.svg?branch=main)](https://github.com/jalantechnologies/rflask-boilerplate/actions/workflows/production_on_push.yml) | [![Code Coverage](https://sonarqube.platform.jalantechnologies.com/api/project_badges/measure?project=jalantechnologies_rflask-boilerplate&metric=coverage&token=a4dd71c68afbb8da4b7ed1026329bf0933298f79)](https://sonarqube.platform.jalantechnologies.com/dashboard?id=jalantechnologies_rflask-boilerplate) |
+This project was built as part of an **Associate Software Engineer Internship Assessment** (Python + React).
 
-## Documentation Directory
+---
 
-- [Getting Started](docs/getting-started.md)
-- [Backend Architecture](docs/backend-architecture.md)
-- [Logging](docs/logging.md)
-- [Configuration](docs/configuration.md)
-- [Secrets](docs/secrets.md)
-- [Bootstrapping](docs/bootstrapping.md)
-- [Scripts](docs/scripts.md)
-- [Code Formatting](docs/code-formatting.md)
-- [Workers](docs/workers.md)
-- [Deployment](docs/deployment.md)
-- [Running Scripts in Production](docs/running-scripts-in-production.md)
+## 🚀 Features
 
-## Best Practices
+✅ Add, Edit, Delete Comments  
+✅ Fetch comments from SQLite database  
+✅ React frontend with Axios API calls  
+✅ Flask RESTful API with CRUD support  
+✅ Automated tests using Pytest + unittest  
+✅ CORS enabled  
+✅ Clean & minimal UI using Vite + TypeScript
 
-Once you have familiarized yourself with the documentation, head over to the [Engineering Handbook](https://github.com/jalantechnologies/handbook/blob/main/engineering/index.md) to learn about the best practices we follow at Better Software.
+---
 
-PS: Before you start working on the application, these [three git settings](https://spin.atomicobject.com/git-configurations-default/) are a must-have!
+## 🛠️ Tech Stack
+
+**Frontend:**
+- React
+- TypeScript
+- Axios
+- Vite
+
+**Backend:**
+- Python
+- Flask
+- SQLAlchemy
+- SQLite
+- Flask-CORS
+
+**Testing:**
+- Pytest
+- Unittest
+
+---
+
+## 📁 Project Structure
+
+flask-react-template/
+├── README.md
+├── src/
+│ ├── apps/
+│ │ ├── backend/
+│ │ │ ├── main.py
+│ │ │ ├── models/
+│ │ │ ├── test_app.py
+│ │ │ └── requirements.txt
+│ │ └── frontend/
+│ │ ├── src/
+│ │ │ ├── index.tsx
+│ │ │ └── components/
+│ │ │ └── Comments.tsx
+│ │ └── vite.config.ts
+
+
+---
+
+## ⚙️ Setup Instructions
+
+### ✅ 1. Backend (Flask)
+
+```bash
+cd src/apps/backend
+python -m venv venv
+venv\Scripts\activate  # On Windows
+pip install -r requirements.txt
+python main.py
+
+This runs your backend on http://localhost:5000
+
+cd src/apps/frontend
+npm install
+npx vite
+
+This runs the frontend on http://localhost:5173
+
+Running Backend Tests : Running Backend Tests
+
+GET	-	Get all comments
+POST	-	Add a new comment
+PUT	-	Update comment
+DELETE	-	Delete comment
+
+UI Screenshot
+![alt text](image.png)
+
+Loya Bhagya Lakshmi
+B.Tech AI & DS, VVIT
+GitHub: @bhagyalakshmihub
+
+
+---
+
+### ✅ Next Steps
+
+1. Create `README.md` in your root folder.
+2. Paste the above content.
+3. Optional: Add a UI screenshot.
+4. Push to GitHub (`git add .`, `git commit -m "add readme"`, `git push`).
+
+Let me know if you want me to:
+- Add a UI screenshot
+- Help push to GitHub
+- Polish README further
+
+All the best! ✅
