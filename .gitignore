@@ -83,3 +83,20 @@ terraform/*.tfvars
 
 # environment file
 .env
+# Python virtual environment
+venv/
+
+# Additional Python files
+__pycache__/
+
+# Frontend build artifacts
+frontend/node_modules/
+frontend/dist/
+
+# IDE settings
+*.swp
+*.swo
+
+# SQLite DB (optional)
+*.sqlite3
+*.db
